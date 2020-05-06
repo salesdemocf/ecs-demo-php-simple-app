@@ -7,7 +7,7 @@ RUN yum install -y \
     php \
  && ln -s /usr/sbin/httpd /usr/sbin/apache2
 
-# Install app
+# Install application
 RUN rm -rf /var/www/html/* && mkdir -p /var/www/html
 ADD src /var/www/html
 
